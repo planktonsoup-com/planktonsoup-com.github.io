@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfFq8gUAAAAAHFFl_8at9e2WpKP4kNx7A6OkmTA"></script>
+
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LfFq8gUAAAAAHFFl_8at9e2WpKP4kNx7A6OkmTA', {action: 'homepage'}).then(function(token) {
+    console.dir({token: token});
+      });
+  });
+  </script>
+
+<head>
+
+<body>
+
+  <form method="post">
+    <div>first name <input name="first" type="text"></div>
+    <div><input type=submit" text="submit"></div>
+  </form>
+
+</body>
+
+</html>
